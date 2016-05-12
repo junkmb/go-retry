@@ -1,7 +1,7 @@
 example
 ```
 var i int
-r := NewCountRetryer(time.Second, 5)
+r := NewCountRetryer(5, time.Second)
 for r.Loop() {
 	fmt.Println(i)
 	i++
